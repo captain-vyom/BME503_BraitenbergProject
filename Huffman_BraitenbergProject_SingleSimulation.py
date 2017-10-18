@@ -1,6 +1,6 @@
 # Will Huffman
-# BME 503
-# Final Report
+# BME 503 - Braitenberg Vehicle Final Project
+# Single Simulation
 # Base code provided by: Craig Henriquez; Edits by Will Huffman
 # This is the code for a single simulation of the Braitenberg Vehicle
 # Variable changes occur on Lines 31 & 33
@@ -24,13 +24,13 @@ b = 0.2
 c = -65
 d = 0.5
 
-I0ex = 750
+I0ex = 750 #
 I0in = 750
-tau_ampa=1.0*ms
-tau_ampa_in = 1.0*ms
-g_synpk_ex=0.4
+tau_ampa=1.0*ms # Time Constant for Excitatory Synapse
+tau_ampa_in = 1.0*ms # Time Constant for Inhibitory Synapse
+g_synpk_ex=0.4 # CHANGE HERE - Excitatory Synaptic Value
 g_synmaxval_ex=(g_synpk_ex/(tau_ampa/ms*exp(-1)))
-g_synpk_in=0.4
+g_synpk_in=0.4 # CHANGE HERE - Inhibitory Synaptic Value
 g_synmaxval_in=(g_synpk_in/(tau_ampa_in/ms*exp(-1)))
 Eex = 0 # excititory reversal potential
 Ein = -70 # inhibitory reversal potential
